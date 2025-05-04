@@ -1,0 +1,64 @@
+.cabecalho {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.cabecalho__menu--icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem {
+    padding: 1em;
+}
+
+.lista__menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+
+/* 
+O (~) funciona como um 'if'
+A leitura seria: "Se o input (com a classe 'container__botao') estiver marcado,
+então aplique as seguintes definições ao ".lista__menu"
+*/
+.container__botao:checked ~ .lista__menu { 
+    display: block;
+}
+
+.container__botao {
+    display: none;
+}
+
+.lista__titulo,
+.lista__item {
+    background-color: var(--branco);
+    padding: 1em;
+}
+
+.lista__titulo {
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.lista__link {
+    background: var(--azul-degrade);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
