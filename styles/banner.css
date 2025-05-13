@@ -38,4 +38,6 @@
 .banner__pesquisa:focus::placeholder {
     color: transparent;
     background: none;
+    transition: 0.1s;
 }
+
