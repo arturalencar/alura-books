@@ -113,6 +113,7 @@ então aplique as seguintes definições ao ".lista__menu"
     .opcoes__botao:checked ~ .lista__menu {
         display: block;
         width: auto;
+        
     }
 
     .opcoes__botao {
