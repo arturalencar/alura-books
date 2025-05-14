@@ -63,11 +63,9 @@ então aplique as seguintes definições ao ".lista__menu"
     text-transform: uppercase;
 }
 
-.container__titulo {
-    display: none;
-}
-
-.opcoes {
+.container__titulo,
+.opcoes,
+.container__texto {
     display: none;
 }
 
@@ -91,6 +89,7 @@ então aplique as seguintes definições ao ".lista__menu"
     
     .opcoes {
         display: flex;
+        margin-left: 3em;
     }
     
     .opcoes__item {
@@ -102,11 +101,9 @@ então aplique as seguintes definições ao ".lista__menu"
         color: var(--preto);
     }
     
-    .container__imagem--transparente {
-        display: none;
-    }
-
-    .cabecalho__menu--icon {
+    .container__imagem--transparente,
+    .cabecalho__menu--icon,
+    .opcoes__botao {
         display: none;
     }
 
@@ -115,8 +112,24 @@ então aplique as seguintes definições ao ".lista__menu"
         width: auto;
         
     }
+}
 
-    .opcoes__botao {
-        display: none;
+@media screen and (min-width: 1728px) {
+    .cabecalho {
+        padding: 0 3em;
+        
+    }
+    
+    .container__link {
+        display: flex;
+        align-items: center;
+        color: var(--preto);
+        
+        margin-left: 2em;
+    }
+
+    .container__texto {
+        display: block;
+        font-size: 20px;
     }
 }
