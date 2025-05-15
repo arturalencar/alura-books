@@ -46,7 +46,8 @@ alura-books/
    git clone https://github.com/arturalencar/alura-books.git
 
 2. Navegue até o diretório
-   ```cd alura-books```
+   ```bash
+   cd alura-books
 
 3. Abra o arquivo ```index.html``` no navegador.
 
