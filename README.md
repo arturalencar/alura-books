@@ -25,19 +25,21 @@ O design do projeto utiliza cores, fontes e imagens para criar uma experiência 
 - **Google Fonts**: Fontes personalizadas.
 
 ## 📂 Estrutura do Projeto
-alura-books/ 
-├── index.html 
-├── reset.css 
-├── style.css 
-├── styles/ 
-│   ├── banner.css 
-│   ├── carrossel.css 
-│   ├── contato.css 
-│   ├── header.css 
-│   ├── rodape.css 
-│   ├── topicos.css 
-├── images/ 
-│   ├── (imagens utilizadas no projeto)
+   ```bash
+   alura-books/ 
+   ├── index.html 
+   ├── reset.css 
+   ├── style.css 
+   ├── styles/ 
+   │   ├── banner.css 
+   │   ├── carrossel.css 
+   │   ├── contato.css 
+   │   ├── header.css 
+   │   ├── rodape.css 
+   │   ├── topicos.css 
+   ├── images/ 
+   │   ├── (imagens utilizadas no projeto)
+   ```
 
 ## 🖥️ Como Executar o Projeto
 
