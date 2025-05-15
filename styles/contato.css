@@ -48,7 +48,7 @@
         justify-content: center;
         align-items: center;
         padding: 3em 1em;
-
+        gap: 1em;
 
     }
     .contato__descricao {
@@ -69,6 +69,7 @@
 
 @media screen and (min-width: 1728px) {
     .contato {
-        padding: 3em 20vw;
+        padding: 4em 20vw;
+        gap: 2em;
     }
 }

@@ -135,12 +135,19 @@
     .descricao__titulo {
         font-size: 32px;
         line-height: 1em;
-        margin: 0;
+        margin: 0.2em 0;
     }
+
     .descricao__titulo--livro {
         margin: 1em 0;
     }
+
     .descricao__texto {
         font-size: 16px;
+    }
+
+    .botoes__ancora:hover {
+        transform: scale(0.95);
+        transition: transform 0.3s ease-in-out;        
     }
 }

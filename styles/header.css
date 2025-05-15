@@ -6,13 +6,21 @@
     position: relative;
 }
 
-.cabecalho__menu--icon {
+.cabecalho__menu-icon {
     display: inline-block;
     width: 24px;
     height: 24px;
     background-image: url("../images/Menu.svg");
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.container__botao:checked ~ .container__rotulo > .cabecalho__menu-icon {
+    background-image: url(../images/MenuAberto.svg);
+}
+
+.container__botao:checked ~ .container__rotulo {
+    background: var(--azul-degrade);
 }
 
 .container {
@@ -89,20 +97,36 @@ então aplique as seguintes definições ao ".lista__menu"
     
     .opcoes {
         display: flex;
-        margin-left: 3em;
+        
     }
     
+    .opcoes__botao:checked~.opcoes__rotulo > .opcoes__item {
+        color: var(--branco);
+    }
+
+    .opcoes__botao:checked~.opcoes__rotulo {
+        background: var(--azul-degrade);
+    }
+
     .opcoes__item {
-        padding: 0 1em;
+        padding: 2em 1em;
         text-transform: uppercase;
     }
     
+    .lista__item:hover {
+        background: var(--azul-degrade);
+    }
+
+    .lista__item:hover > .lista__link {
+        -webkit-text-fill-color: var(--branco);
+    }
+
     .opcoes__link {
         color: var(--preto);
     }
     
     .container__imagem--transparente,
-    .cabecalho__menu--icon,
+    .cabecalho__menu-icon,
     .opcoes__botao {
         display: none;
     }
@@ -131,5 +155,10 @@ então aplique as seguintes definições ao ".lista__menu"
     .container__texto {
         display: block;
         font-size: 20px;
+    }
+
+    .opcoes {
+        margin-right: auto;
+        margin-left: 2em;   
     }
 }
